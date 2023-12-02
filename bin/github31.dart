@@ -1,5 +1,3 @@
-import 'package:github31/github31.dart' as github31;
-
 void main(List<String> arguments) {
   int zero = 0;
   int one = 1;
