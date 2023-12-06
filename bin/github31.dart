@@ -1,12 +1,13 @@
 import 'dart:io';
 
 import 'IfElse.dart';
+import 'for.dart';
 
 void main(List<String> arguments) {
-  print('Введите что-то: ');
+  // print('Введите что-то: ');
 
-  String? userInput = stdin.readLineSync();
-  print('Вы ввели: $userInput');
+  // String? userInput = stdin.readLineSync();
+  // print('Вы ввели: $userInput');
 
   int zero = 0;
   int one = 1;
@@ -19,4 +20,5 @@ void main(List<String> arguments) {
   print('');
 
   ifElse();
+  loop();
 }
