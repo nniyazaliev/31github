@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'IfElse.dart';
 import 'for.dart';
 
@@ -19,4 +21,10 @@ void main(List<String> arguments) {
 
   ifElse();
   loop();
+
+  List<int> numbers = [1, 2, 3];
+  int length = numbers[2];
+  List<String> chars = List<String>.filled(length, '');
+  chars[numbers.length - 1] = 'y';
+  print("Done!");
 }
