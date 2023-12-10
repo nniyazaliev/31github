@@ -1,14 +1,24 @@
 import 'dart:ffi';
-
-import 'IfElse.dart';
+import 'IfElse.dart'; // Подключите ваши другие файлы
 import 'for.dart';
 
+List<String> fizzBuzz(int n) {
+  List<String> list = [];
+  for (int i = 1; i <= n; i++) {
+    if (i % 15 == 0) {
+      list.add("FizzBuzz");
+    } else if (i % 3 == 0) {
+      list.add("Fizz");
+    } else if (i % 5 == 0) {
+      list.add("Buzz");
+    } else {
+      list.add(i.toString());
+    }
+  }
+  return list;
+}
+
 void main(List<String> arguments) {
-  // print('Введите что-то: ');
-
-  // String? userInput = stdin.readLineSync();
-  // print('Вы ввели: $userInput');
-
   int zero = 0;
   int one = 1;
   int three = 3;
@@ -27,4 +37,7 @@ void main(List<String> arguments) {
   List<String> chars = List<String>.filled(length, '');
   chars[numbers.length - 1] = 'y';
   print("Done!");
+
+  List<String> result = fizzBuzz(15);
+  print(result);
 }
