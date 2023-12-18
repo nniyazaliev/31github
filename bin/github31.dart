@@ -1,6 +1,7 @@
 import 'dart:ffi';
 import 'IfElse.dart'; // Подключите ваши другие файлы
 import 'for.dart';
+import 'point.dart';
 import 'students.dart';
 
 List<String> fizzBuzz(int n) {
@@ -42,13 +43,19 @@ void main(List<String> arguments) {
   // List<String> result = fizzBuzz(15);
   // print(result);
 
-  List<Student> students = [
-    Student("Morgan", "Freeman"),
-    Student("Brad", "Pitt"),
-    Student("Kevin", "Spacey"),
-  ];
+  // List<Student> students = [
+  //   Student("Morgan", "Freeman"),
+  //   Student("Brad", "Pitt"),
+  //   Student("Kevin", "Spacey"),
+  // ];
 
-  for (Student student in students) {
-    student.printFullName();
+  // for (Student student in students) {
+  //   student.printFullName();
+  // }
+
+  Point p = Point(32, 32);
+  for (int i = 0; i < 5; i++) {
+    p.scale();
+    p.printPoint();
   }
 }
